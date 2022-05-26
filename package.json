@@ -1,0 +1,22 @@
+{
+  "name": "fe-essay",
+  "version": "1.0.0",
+  "description": "记录前端重要知识点和遇到的好文章，同时还有前端重要算法知识，但最关键的是包含各大小厂真题。",
+  "main": "index.js",
+  "repository": "git@github.com:i-want-offer/FE-Interview-questions.git",
+  "author": {
+    "name": "i-want-offer",
+    "url": "https://github.com/i-want-offer",
+    "email": "laamginghong1996@qq.com"
+  },
+  "scripts": {
+    "start": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "yarn build; cd dist; git init; git add .;git commit -m 'deploy';git remote add origin git@github.com:i-want-offer/FE-Essay.github.io.git;git push --set-upstream origin master -f"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
